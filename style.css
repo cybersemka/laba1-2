@@ -1,0 +1,206 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Возвращаем фоновый цвет обратно */
+    background-image: url('background1.png'); /* Путь к вашему фоновому изображению */
+    background-size: cover; /* Растягиваем фон на всю ширину и высоту */
+    background-position: center; /* Выравниваем фон по центру */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.header {
+    font-family: Arial, sans-serif;
+    color: #333; /* Возвращаем цвет текста обратно */
+    padding: 15px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    background-color: #f7f7f7; /* Возвращаем фоновый цвет обратно */
+    text-align: center; /* Центрируем текст в шапке */
+}
+
+.main-menu {
+    display: flex; /* Располагаем элементы горизонтально */
+    justify-content: space-around; /* Равномерно распределяем пространство между элементами */
+    padding: 20px 0; /* Добавляем отступы сверху и снизу */
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #333; /* Возвращаем цвет текста обратно */
+    font-weight: bold;
+    display: flex; /* Добавляем flex для выравнивания иконок и текста */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 20px; /* Радиус скругления углов */
+    overflow: hidden; /* Обрезаем изображение, чтобы оно соответствовало скругленным углам */
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 100%; 
+}
+
+.btn {
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    color: #333;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.p-center {
+    text-align: center; 
+}
+
+
+.main-menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.middle-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+.feedback-form {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.feedback-form .form-field {
+    margin-bottom: 10px;
+}
+
+.feedback-form .form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feedback-form .form-field input[type="text"],
+.feedback-form .form-field input[type="email"],
+.feedback-form .form-field textarea,
+.feedback-form .form-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.feedback-form .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form .form-submit:hover {
+    background-color: #0056b3;
+}

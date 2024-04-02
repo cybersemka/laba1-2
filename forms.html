@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Форма обратной связи</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="auth.css">
+    </head>
+    <body>
+        <main>
+            <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+                <p>Форма обратной связи </p>
+                <input class="form-field" type="text" name="fio" placeholder="Ф.И.О." required>
+                <input class="form-field" type="email" name="email" placeholder="Email" required>
+                <div class="form-field">
+                    <p>Откуда вы о нас узнали</p>
+                    <input type="radio" name="source" value="ad" required; label for="source">Реклама</label>
+                    <input type="radio" name="source" value="ad" required; label for="source">Общественный транспорт</label>
+                    <input type="radio" name="source" value="ad" required; label for="source">Интернет</label>
+                    <input type="radio" name="source" value="ad" required; label for="source">Рассказали друзья</label>
+                    
+                </div>
+                <br>
+                <label class="form-field">Категория обращения
+                    <select name="request_for form-field" required>
+                        <option value="">Предложение</option>
+                        <option value="1">Жалоба</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <label>Текст обращения</label>
+                <textarea  name="request_data" cols="30" rows="10"></textarea>
+                <label>Вложения</label>
+                <input type="file" name="attach">
+                <br>
+                <br>
+                <input type="checkbox" name="accept_tos" required>
+                <label>Соглашаюсь с условиями использования и конфиденциальности</label>
+                <br>
+                <input class="form-field form-submit" type="submit">
+            </form>
+        </main>
+    </body>
+</html>

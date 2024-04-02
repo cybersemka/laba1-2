@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Login page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="auth.css">
+    </head>
+    <body>
+        <main>
+            <form class="middle-form" method="POST" action="https://httpbin.org/post">
+                <input class="form-field" type="text" name="login" placeholder="Логин" required>
+                <input class="form-field" type="password" name="password" placeholder="Пароль" required>
+                <label class="form-field"><input type="checkbox" name="stay"> Оставаться в системе</label>
+                <input class="form-field form-submit" type="submit" value="Войти">
+            </form>
+        </main>
+    </body>
+</html>
